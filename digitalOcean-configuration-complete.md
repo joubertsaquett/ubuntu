@@ -1,9 +1,9 @@
-###Passo 1 — Instalação do Apache e Atualização do Firewall
+### Passo 1 — Instalação do Apache e Atualização do Firewall
 Instale o Apache utilizando o gerenciador de pacotes do Ubuntu, apt:
 - sudo apt update
 - sudo apt install apache2
 
-###Ajustar o Firewall para Permitir Tráfego Web
+### Ajustar o Firewall para Permitir Tráfego Web
 - sudo ufw app list
 
 > "Available applications:
@@ -17,11 +17,11 @@ Instale o Apache utilizando o gerenciador de pacotes do Ubuntu, apt:
 - http://ip_do_seu_servidor
 
 
-###Como Encontrar o Endereço IP Público do seu Servidor
+### Como Encontrar o Endereço IP Público do seu Servidor
 - ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
 
 
-###Passo 2 — Instalação do MySQL
+### Passo 2 — Instalação do MySQL
 - sudo apt install mysql-server
 	- Apert Y para continuar
 - sudo mysql_secure_installation
@@ -30,7 +30,7 @@ Instale o Apache utilizando o gerenciador de pacotes do Ubuntu, apt:
 	- Para o restante das perguntas, pressione Y.
 
 
-###Passo 3 — Instalação do PHP
+### Passo 3 — Instalação do PHP
 - sudo add-apt-repository ppa:ondrej/php
 - sudo apt-get update
 - sudo apt install php7.1
@@ -62,7 +62,7 @@ Altere para este:
 
 - sudo apt install php-cli
 
-###Passo 4 — Testando o Processamento PHP no seu Servidor Web
+### Passo 4 — Testando o Processamento PHP no seu Servidor Web
 - sudo nano /var/www/html/info.php
 > "<?php
 phpinfo();
@@ -71,7 +71,7 @@ phpinfo();
 	- para remover o arquivo use: sudo rm /var/www/html/info.php
 
 
-###Passo 5 criar mais sites
+### Passo 5 criar mais sites
 Entre na pasta www
 - cd /var/www
 Crie a pasta do projeto
@@ -120,7 +120,7 @@ pronto
 - http://teste.com
 
 
-###Passo 6 Installar phpMyAdmin
+### Passo 6 Installar phpMyAdmin
 - sudo apt-get update
 - sudo apt-get install phpmyadmin
 - sudo php5enmod mcrypt
