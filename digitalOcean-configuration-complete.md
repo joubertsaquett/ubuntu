@@ -145,3 +145,7 @@ Caso não carregue (404):
 - sudo apt-get install php7.1-soap
 - apt-cache policy php7.1-soap
 - sudo service apache2 restart
+
+### Install DOMDocument
+- sudo apt-get install php7.1-xml
+- sudo service apache2 restart
