@@ -139,3 +139,9 @@ Caso não carregue (404):
 	- em alguns casos:
 		- nano /etc/apache2/apache2.conf
 			acrescente: Include /etc/phpmyadmin/apache.conf
+
+
+### Ativar SOAP
+- sudo apt-get install php7.1-soap
+- apt-cache policy php7.1-soap
+- sudo service apache2 restart
