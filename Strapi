@@ -1,0 +1,19 @@
+npm install strapi@beta -g
+
+strapi new cms
+
+
+npm run develop
+  Start Strapi in watch mode.
+
+  npm run start
+  Start Strapi without watch mode.
+
+  npm run build
+  Build Strapi admin panel.
+
+  npm run strapi
+  Display all available commands.
+
+You can start by doing:
+  npm run develop
