@@ -1,1 +1,2 @@
+pm2 start "node app.js" --name Node-Media-Serve
 pm2 start "npm start" --name api
