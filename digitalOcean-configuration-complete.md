@@ -149,3 +149,7 @@ Caso não carregue (404):
 ### Install DOMDocument
 - sudo apt-get install php7.1-xml
 - sudo service apache2 restart
+
+
+###Tradução
+https://www.vivaolinux.com.br/topico/SQL-em-geral-1/problema-no-locale-settings
