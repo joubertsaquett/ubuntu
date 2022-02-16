@@ -51,6 +51,19 @@ date.timezone = America/Chicago"
 - sudo a2enmod php7.1
 - sudo systemctl restart apache2.service
 
+
+- Apache dongrade php
+sudo a2dismod php8.0
+sudo a2enmod php7.4
+sudo service apache2 restart
+- Command line
+sudo update-alternatives --set php /usr/bin/php7.4
+sudo update-alternatives --set phar /usr/bin/phar7.4
+sudo update-alternatives --set phar.phar /usr/bin/phar.phar7.4
+sudo update-alternatives --set phpize /usr/bin/phpize7.4
+sudo update-alternatives --set php-config /usr/bin/php-config7.4
+
+
 - sudo nano /etc/apache2/mods-enabled/dir.conf
 Altere para este:
 > "< IfModule mod_dir.c >
